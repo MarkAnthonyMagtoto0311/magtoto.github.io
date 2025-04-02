@@ -1,0 +1,48 @@
+<html>
+	<head>
+        <title>Countdown Timer</title>
+
+        <script>
+           
+                    function printNameTwice() {
+                    let name = "Mark Anthony"; // Replace with your actual name
+                    let result = "";
+      
+                    // Loop to print the name twice
+                    for (let i = 0; i < 2; i++) {
+                    result += name + "<br>";
+                     }
+
+                    // Display the result in the div with id 'output’
+                    document.getElementById("output").innerHTML = result;
+            }
+
+        // Function to start the countdown
+        function startCountdown() {
+        let countdownStart = 10; // Starting number for the countdown
+
+        // Use a for loop to count down from 10 to 1
+        for (let i = countdownStart; i >= 1; i--) {
+        document.write(i + "<br>"); // Print each countdown number to the console
+
+        }
+
+        // When the countdown reaches 0, print 'Time's up!'
+        document.write("Time's up!");
+        }
+
+            
+ </script>
+
+        
+	</head>
+    <body>
+        <h1>Click the button to print your name twice:</h1>  
+        <button onclick="printNameTwice()">Submit</button>
+  
+        <div id="output"></div>  
+        <h1>Countdown Timer</h1>
+        <button onclick="startCountdown()">Start Countdown</button>
+
+    </body>
+</html>

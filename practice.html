@@ -1,0 +1,30 @@
+<html>
+	<head>
+        <script>
+           for (let i = 19; i >= 1; i -= 2) {
+             document.write(i + "<br>");
+   }
+
+   function generate() {
+            var times = document.getElementById("times").value;
+            var sentence = document.getElementById("text").value;
+            var text = "";
+            for (var i = 1; i <= times; i++) {
+                    text += sentence + "<br />";
+            }
+            document.getElementById("output").innerHTML = text;
+            }
+            
+        </script>
+	</head>
+    <body>
+        <div>
+            Text: <input type="text" id="text" /><br />
+            Times: <input type="text" id="times" /><br />
+            <input type="button" value="Generate Song"
+             onclick="generate();" />
+            <p id="output">
+            </p>
+        </div>        
+    </body>
+</html>
